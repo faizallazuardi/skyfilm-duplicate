@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+.homepage {
+  color: white;
+  background-color: #36477f;
+}
+
+/* navbar */
+.nav-icon {
+  background-color: red;
+}
+
+.search {
+  cursor: pointer;
+  right: 49%;
+  top: 32%;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.form-search {
+  width: 200px;
+}
+
+.color {
+  color: blue;
+}
+
+.input-navbar {
+  display: none;
+}
+
+/* hero */
+
+.konten-hero {
+  bottom: 15%;
+  right: 10%;
+}
+
+.btn-hero img {
+  width: 45px;
+}
+
+.hero-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-image: linear-gradient(to top, #36477f, transparent);
+}
+
+/* card 1 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide #card1 {
+  display: block;
+  width: 180px;
+  height: 280px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.swiper-slide #card2 {
+  width: 350px;
+  height: 200px;
+}
+
+.swiper-slide #card3 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.card-1 .swiper-button-prev::after {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+.card-1 .swiper-button-next::after {
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+.Card1-detail .swiper-button-prev::after {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-bottom: 2.5rem;
+}
+.Card1-detail .swiper-button-next::after {
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner img {
+  width: 45px;
+}
+
+.card-2 .swiper-button-prev::after {
+  color: white;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 5.5rem;
+}
+
+.card-2 .swiper-button-next::after {
+  color: white;
+  font-size: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 5.5rem;
+}
+
+.null-cover {
+  color: white;
+  background-color: #36477f;
+}
+
+.data-null {
+  width: 100%;
+  height: 70vh;
+}
+
+.logo-vidio {
+  width: 100px;
+}
+
+/* series */
+.seriesfilm {
+  color: white;
+  background-color: #36477f;
+}
+
+.series img {
+  width: 200px;
+  height: 300px;
+}
+
+/* cast */
+.cast {
+  color: white;
+  background-color: #36477f;
+}
+
+.peta {
+  width: 100%;
+  /* margin: 0 auto; */
+  background-image: url();
+}
+
+.leaflet-container {
+  height: 60vh;
+  margin: 0 auto;
+}
+
+/* story */
+.storyfilm {
+  background-color: #36477f;
+  height: 2000pxss;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("path-to-your-font/MyWebFont.woff") format("woff");
+}
+
+.btn-next {
+  /* position: absolute; */
+  bottom: 3%;
+  right: 5%;
+  text-align: end;
+}
+
+.loading-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #36477f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  border: 8px solid #0000;
+  border-radius: 50%;
+  border-color: #e4e4ed #0000;
+  animation: s6 1s infinite linear;
+}
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 4px;
+  border: inherit;
+  border-radius: 50%;
+}
+.custom-loader::before {
+  border-color: #766df4 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+.custom-loader::after {
+  margin: 16px;
+}
+
+@keyframes s6 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.logo-cast {
+  max-width: 90%;
+}
+
+@media screen and (max-width: 840px) {
+  .search {
+    right: 75%;
+    top: 32%;
+    font-size: 1.6rem;
+  }
+
+  .swiper-slide #card2 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .logo-cast {
+    max-width: 70%;
+  }
+
+  .container-story {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .data-null {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .konten-hero {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .carousel-indicators button {
+    display: none;
+  }
+
+  .hero-wrap::after {
+    display: none;
+  }
+
+  .search {
+    right: 59%;
+    top: 32%;
+    font-size: 1.6rem;
+  }
+
+  .form-search {
+    width: 150px;
+  }
+
+  .series img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .series p {
+    font-size: medium;
+  }
+
+  .swiper-slide #card1 {
+    width: 160px;
+    height: 240px;
+  }
+
+  .swiper-slide #card2 {
+    width: 150px;
+    height: 100px;
+  }
+
+  .swiper-slide p {
+    margin-left: 0.8rem;
+  }
+
+  .card-1 .swiper-button-prev::after,
+  .card-1 .swiper-button-next::after {
+    display: none;
+  }
+
+  .card-2 .swiper-button-prev::after,
+  .card-2 .swiper-button-next::after {
+    display: none;
+  }
+
+  .container-story {
+    min-height: max-content;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .short-sinop {
+    max-width: 80%;
+    min-height: 250px;
+  }
+}
