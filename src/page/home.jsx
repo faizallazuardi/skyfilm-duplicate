@@ -20,7 +20,7 @@ export default function Home() {
         <div className="homepage">
           <Navigasi />
           <Hero />
-          <Card1 api={dumy1} ulang={true} showLink={true} judul="Seriess Collection" />
+          <Card1 api={dumy1} ulang={true} showLink={true} judul="Series Collection" />
           <Card2 api={dumy3} caption={<Caption />} />
           <Footer />
         </div>
